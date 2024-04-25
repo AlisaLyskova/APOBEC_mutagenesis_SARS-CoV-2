@@ -8,6 +8,6 @@ We used SARS-CoV-2 genome NC_045512.2 and available RNA-seq data from Covid-19 p
 Pisces -bam file.bam -g <path_to_the_genome> -o <path_for_output> -t 32 -gVCF false -MinVF 0.0000000001 -MinVariantQScore 0 -c 1 -MaxVQ 10000
 ```
 
-An example output file can be found in the folder /data
+An example of output file can be found in the folder /data
 
-Then we wrote a python program for visualization .vcf received files (vcf_plots.ipynb).
+Then we wrote a python program for visualization .vcf received files (vcf_plots.ipynb). We calculated number of reads and allele frequency depending on the 5' and 3' nucleotides for all mutation types.
