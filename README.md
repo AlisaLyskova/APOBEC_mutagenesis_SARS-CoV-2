@@ -8,6 +8,8 @@ We used SARS-CoV-2 genome NC_045512.2 and available RNA-seq data from Covid-19 p
 Pisces -bam file.bam -g <path_to_the_genome> -o <path_for_output> -t 32 -gVCF false -MinVF 0.0000000001 -MinVariantQScore 0 -c 1 -MaxVQ 10000
 ```
 
-An example of output file can be found in the folder /data
+Then we wrote a python program for visualization .vcf received files (SARS-CoV-2_genome_variants.ipynb). We calculated number of reads and allele frequency depending on the 5' and 3' nucleotides for all mutation types.
 
-Then we wrote a python program for visualization .vcf received files (vcf_plots.ipynb). We calculated number of reads and allele frequency depending on the 5' and 3' nucleotides for all mutation types.
+We also studied mutation C→T in the context of SARS-CoV-2 secondary structure. We wrote a program to visualize the number of positions with a C→T mutation depending on the secondary structure and the preceding nucleotide (APOBEC_mutagenesis_SARS-CoV-2.ipynb).
+
+Examples of output files can be found in the folder /data.
